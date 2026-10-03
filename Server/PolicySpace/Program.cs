@@ -14,6 +14,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.MapGet("/", () => "PolicySpace API is running 🚀");
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
